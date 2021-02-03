@@ -2,9 +2,9 @@
 <div (click)="click2()">click</div>
 <div class="example-viewport">
   <div class="wrapper">
-    <cdk-virtual-scroll-viewport [itemSize]="18 * 7">
+    <cdk-virtual-scroll-viewport [itemSize]="20">
       <ng-container *ngIf="items.length === 0">
-        <div *cdkVirtualFor="let item of [5];" cdkVirtualForTemplateCacheSize="0">
+        <div *cdkVirtualFor="let item of [];" cdkVirtualForTemplateCacheSize="0">
           {{item}}
         </div>
       </ng-container>
